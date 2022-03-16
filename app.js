@@ -1,6 +1,6 @@
 const container = document.getElementById("container");
 
-// const cell = document.createElement('div');
+const cell = document.createElement('div');
 
 function drawGrid(gridRows, gridColumns) {
     //let gridRows = Number(gridRows);
