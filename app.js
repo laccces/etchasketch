@@ -1,18 +1,16 @@
-const container = document.getElementById("container");
+function drawBoard(size) {
+    let board = document.querySelector('.board');
+    board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+    board.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 
-const cell = document.createElement('div');
-
-function drawGrid(gridRows, gridColumns) {
-    //let gridRows = Number(gridRows);
-    //let gridColumns = Number(gridColumns);
-
-    for (let i = 0; i <  gridRows; i++) {
-       // var newDiv = document.createElement('div');
-       return cell
+    for (let i=0; i<256; i++) {
+        let square = document.createElement('div');
+        board.insertAdjacentElement('beforeend', square);
     }
-
 }
 
-drawGrid(16, 16)
+drawBoard(16);
 
-container.appendChild(cell);
+function changeSize(input) {
+    drawBoard(input)
+}
