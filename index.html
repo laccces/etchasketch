@@ -10,12 +10,13 @@
 </head>
 <body>
     <div class="container"></div>
-        <div class="title"><h1>Etch-a-sketch</h1></div>
+        <div class="title"><h1>Etch-a-sketch</h1></div><br>
+        <div class="buttons">
+            <button onclick="changeSize()">Reset board</button>
+        </div>
         <div class="content">
             <div class="board"></div>
-            <div class="buttons">
-                <button onclick="resetBoard()">Reset</button>
-            </div>
+<!-- 
             <div>
                 <input type="text" 
                         placeholder="Size of board" 
@@ -23,6 +24,7 @@
                         onchange="changeSize(this.value)" />
                 <button>Set size</button>
             </div>
+            -->
         </div>
 </body>
 <script src="app.js"></script>

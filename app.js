@@ -16,7 +16,8 @@ function drawBoard(size) {
 
 drawBoard(16);
 
-function changeSize(input) {
+function changeSize() {
+    let input = prompt("How many squares per row?", 16)
     if(input >= 2 && input <= 100) {
     drawBoard(input);
     } else {
@@ -24,9 +25,10 @@ function changeSize(input) {
     }
     
 }
-
+/*
 function resetBoard() {
     let board = document.querySelector('.board');
     let squares = board.querySelectorAll('div');
     squares.forEach((div) => div.style.backgroundColor = 'white');
 }
+*/
